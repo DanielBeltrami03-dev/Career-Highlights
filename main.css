@@ -720,8 +720,8 @@ input, select, textarea {
 				height: auto;
 				margin-left: 15%}
 								;
-			.image.main.me{
-				width: auto;
+			.image.main.me img{
+				width: 75%;
 				height: 80%;
 				
 				
