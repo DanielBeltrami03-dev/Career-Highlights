@@ -719,12 +719,11 @@ input, select, textarea {
 				width: 70%;
 				height: auto;
 				margin-left: 15%}
-								;
-			.image.main.me{
-				width: 100%;
-				height: 80%;
-				
-				
+								
+			.image.main.me img{
+				width: 70%;
+				height: 100%;
+				margin-left: 15%;
 			}
 			.image.main img{
 				width: 100%;
