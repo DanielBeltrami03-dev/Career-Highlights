@@ -1,32 +1,20 @@
-// Inizializza EmailJS con il tuo User ID
-emailjs.init("sjYoENSccuaE231cn");
-
-// Aggiungi l'evento submit al form
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Impedisce l'invio predefinito del modulo
-
-    // Crea un oggetto FormData per raccogliere i dati dal modulo
-    const formData = new FormData(this);
-    const formObject = {};
-    formData.forEach((value, key) => {
-        formObject[key] = value; // Associa nome, email, messaggio ai rispettivi campi
-    });
-
-    // Aggiungi il campo 'time' con la data/ora corrente
-    const currentTime = new Date().toLocaleString(); // Ottieni la data/ora corrente
-    formObject["time"] = currentTime; // Aggiungi il campo 'time'
-
-    // Invia i dati tramite EmailJS (sostituisci con i tuoi Service ID e Template ID)
-    emailjs.send("service_38giqlh", "template_swn48zm", formObject)
-        .then(function(response) {
-            // Mostra un messaggio di successo
-            alert("Email inviata correttamente, ti risponderò appena possibile!");
-        }, function(error) {
-            // Mostra un messaggio di errore
-            console.log("EmailJS Error: ", error);
-            alert("C'è stato un problema nell'invio del messaggio. Ti prego di contattarmi direttamente a daniel.beltrami0@gmail.com. Grazie per la pazienza.");
-        });
-});
-
-
-
+fetch('https://api.emailjs.com/api/v1.0/email/send', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        service_id: 'service_38giqlh', // Sostituisci con il tuo Service ID
+        template_id: 'template_swn48zm', // Sostituisci con il tuo Template ID
+        user_id: 'sjYoENSccuaE231cn', // Sostituisci con il tuo User ID
+        template_params: formObject // i tuoi dati del form
+    })
+}).then(response => response.json())
+  .then(data => {
+      console.log('Success:', data);
+      alert("Email inviata correttamente, ti risponderò appena possibile!");
+  })
+  .catch((error) => {
+      console.error('Error:', error);
+      alert("C'è stato un problema nell'invio del messaggio. Ti prego di contattarmi direttamente a daniel.beltrami0@gmail.com. Grazie per la pazienza.");
+  });
