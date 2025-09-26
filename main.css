@@ -730,6 +730,9 @@ input, select, textarea {
 				height: 100%;
 				
 			}
+			#Twincat_course{
+				border-radius: 50%;
+			}
 
 		@media screen and (max-width: 736px) {
 
@@ -746,6 +749,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 /* List */
 
