@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -32,11 +33,10 @@
 							<ul>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Work</a></li>
-								<li><a href="#Career_Path">Career Path</a></li>
+								<li><a href="#Career_Path">Career</a></li>
+								<li><a href="#Personal_Courses">Courses</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
-								
-								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
@@ -83,6 +83,11 @@
 								<h2 class="major_1">WORK IN PROGRESS,<BR>BE PATIENT</h2>
 							</article>
 
+						<!--Career Courses-->	>
+							<article id="Personal_Courses">
+								<h2 class="major_1">WORK IN PROGRESS,<BR>BE PATIENT</h2>
+							</article>
+
 						<!-- About -->
 							<article id="about">
 								<h2 class="major_4">About</h2>
@@ -93,8 +98,8 @@
 						<!-- Contact -->
 							<article id="contact">
    								 <h2 class="major_!">Contattaci</h2>
-   									 <form method="post" action="send_email.php"> <!-- Cambiato da "#" a "send_email.php" -->
-       								 <div class="fields">
+   									 <form id="contact-form" method="post">
+										<div class="fields">
            								 <div class="field half">
                 							<label for="name">Nome</label>
                								<input type="text" name="name" id="name" />
@@ -385,3 +390,4 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
