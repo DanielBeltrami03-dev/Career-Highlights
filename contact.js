@@ -13,7 +13,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     formObject["time"] = currentTime; // Aggiungi il campo 'time'
 
     // Invia i dati tramite EmailJS (sostituisci con i tuoi Service ID e Template ID)
-    emailjs.send("service_38giqlh", "template_yf43bfb", formObject)
+    emailjs.send("service_38giqlh", "template_n98aqhk", formObject)
         .then(function(response) {
             // Mostra un messaggio di successo
             alert("Email sent successfully, you will hear from me as soon as possible");
@@ -23,5 +23,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
             alert("We regret to inform you that there was an issue while sending your message. Kindly reach out directly to daniel.beltrami0@gmail.com for further assistance. Thank you for your understanding and patience.");
         });
 });
+
 
 
