@@ -1,5 +1,5 @@
 // Inizializza EmailJS con il tuo User ID
-emailjs.init("5ztQd60GF5T2vY5Bc");
+emailjs.init("sjYoENSccuaE231cn");
 
 // Aggiungi l'evento submit al form
 document.getElementById("contact-form").addEventListener("submit", function(event) {
@@ -27,5 +27,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
             alert("C'è stato un problema nell'invio del messaggio. Ti prego di contattarmi direttamente a daniel.beltrami0@gmail.com. Grazie per la pazienza.");
         });
 });
+
 
 
