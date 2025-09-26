@@ -19,7 +19,8 @@ document.getElementById("contact-form").addEventListener("submit", function(even
             alert("Email sent successfully, you will hear from me as soon as possible");
         }, function(error) {
             // Mostra un messaggio di errore
-            alert("We regret to inform you that there was an issue while sending your message. Kindly reach out directly to danie.beltrami0@gmail.com for further assistance. Thank you for your understanding and patience.");
+            alert("We regret to inform you that there was an issue while sending your message. Kindly reach out directly to daniel.beltrami0@gmail.com for further assistance. Thank you for your understanding and patience.");
         });
 });
+
 
