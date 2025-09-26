@@ -6,6 +6,24 @@
 
 (function($) {
 
+	// Funzione per mostrare solo il corso selezionato
+	function showCourse(courseId) 
+	{
+    // Nascondi tutti i corsi
+    	var courses = document.querySelectorAll('.course-content');
+    		courses.forEach(function(course) 
+			{
+    	    course.style.display = 'none'; // Nasconde il corso
+			});
+
+    // Mostra il corso selezionato
+    	var selectedCourse = document.getElementById(courseId);
+    		if (selectedCourse) {
+        	selectedCourse.style.display = 'block'; // Mostra il corso selezionato
+    			}
+	}
+
+
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
