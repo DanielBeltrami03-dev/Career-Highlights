@@ -1,5 +1,5 @@
 // Inizializza EmailJS con il tuo User ID
-emailjs.init("dTX6NgDDzST_fqrGT");
+emailjs.init("5ztQd60GF5T2vY5Bc");
 
 // Gestore dell'evento di invio del modulo
 document.getElementById("contact-form").addEventListener("submit", function(event) {
@@ -22,3 +22,4 @@ document.getElementById("contact-form").addEventListener("submit", function(even
             alert("We regret to inform you that there was an issue while sending your message. Kindly reach out directly to danie.beltrami0@gmail.com for further assistance. Thank you for your understanding and patience.");
         });
 });
+
