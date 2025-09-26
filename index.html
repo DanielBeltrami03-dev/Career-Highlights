@@ -92,27 +92,28 @@
 
 						<!-- Contact -->
 							<article id="contact">
-								<h2 class="major_!">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+   								 <h2 class="major_!">Contattaci</h2>
+   									 <form method="post" action="send_email.php"> <!-- Cambiato da "#" a "send_email.php" -->
+       								 <div class="fields">
+           								 <div class="field half">
+                							<label for="name">Nome</label>
+               								<input type="text" name="name" id="name" />
+           								</div>
+            							<div class="field half">
+                 							<label for="email">Email</label>
+                							<input type="text" name="email" id="email" />
+            							</div>
+           								<div class="field">
+                							<label for="message">Messaggio</label>
+                							<textarea name="message" id="message" rows="4"></textarea>
+            							</div>
+        							</div>
+        							<ul class="actions">
+            							<li><input type="submit" value="Invia Messaggio" class="primary" /></li>
+            							<li><input type="reset" value="Reset" /></li>
+        							</ul>
+    								</form>
+
 								<ul class="icons"> 
 									<li><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BjYZ5yURIRTW5BcFeVBDl9Q%3D%3D" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
