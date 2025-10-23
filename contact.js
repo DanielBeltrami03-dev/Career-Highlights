@@ -20,8 +20,10 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         }, function(error) {
             // Mostra un messaggio di errore
             console.log("EmailJS Error: ", error);  // Aggiungi questo per ottenere dettagli sull'errore
-            alert("We regret to inform you that there was an issue while sending your message. Kindly reach out directly to daniel.beltrami0@gmail.com for further assistance. Thank you for your understanding and patience.");
+            alert("It's highly recommended to contact me via email directly at: daniel.beltrami0@gmail.com");
         });
+
+
 });
 
 
